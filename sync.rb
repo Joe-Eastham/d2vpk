@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 require 'rake'
 
-# dota = "#{ENV["HOME"]}/.steam/steam/SteamApps/common/dota\ 2\ test"
-dota = "#{ENV["HOME"]}/.steam/steam/SteamApps/common/dota\ 2\ beta"
+dota = "#{ENV["HOME"]}/.steam/steam/SteamApps/common/dota\ 2\ test"
+# dota = "#{ENV["HOME"]}/.steam/steam/SteamApps/common/dota\ 2\ beta"
 
 sh 'mkdir', '-p', 'dota/resource'
 sh 'cp', '-r', "#{dota}/dota/resource/", 'dota/'
