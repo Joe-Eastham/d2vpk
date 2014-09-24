@@ -825,6 +825,17 @@ Rule ursa_PowerupIsPowerupRegeneration_Rule
 	response ursa_PowerupIsPowerupRegeneration
 }
 
+Response ursa_PowerupIsPowerupBounty
+{
+	scene "scenes/ursa/ursa_ursa_lasthit_01.vcd" nodelay noscene 
+}
+
+Rule ursa_PowerupIsPowerupBounty_Rule
+{
+	criteria Powerup Isursa IsPowerupBounty
+	response ursa_PowerupIsPowerupBounty
+}
+
 Response ursa_PowerupIsPowerupIllusion
 {
 	scene "scenes/ursa/ursa_ursa_illus_01.vcd" nodelay noscene 

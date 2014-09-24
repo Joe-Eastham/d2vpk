@@ -35863,6 +35863,8 @@ Sitting at the edge of their sinking home they grinned and giggled, as giddy at 
 "[english]dota_tip_advanced_9"	"Activating Manta Style removes several buffs and debuffs, and will cause projectiles that are already in flight to miss."
 "dota_tip_advanced_11"	"Cheese kann für 500 Gold verkauft werden."
 "[english]dota_tip_advanced_11"	"Cheese can be sold for 500 gold."
+"dota_tip_advanced_17"	"Wenn Sie in Reichweite von mehreren Auren mit demselben Effekt sind, wird nur die stärkste Aura aktiv sein."
+"[english]dota_tip_advanced_17"	"If you are within range of several auras with the same effect, only the most powerful aura will be active."
 "dota_tip_advanced_20"	"Ein Punkt in Agilität erhöht das Angriffstempo eines Helden um 1 und die Rüstung um 0,14."
 "[english]dota_tip_advanced_20"	"One point of Agility increases hero attack speed by 1, as well as 0.14 armor."
 "dota_tip_advanced_21"	"Ein Punkt in Intelligenz erhöht das maximale Mana um 13 und die Manaregeneration pro Sekunde um 0,04."
