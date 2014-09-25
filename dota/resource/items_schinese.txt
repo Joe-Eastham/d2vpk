@@ -25152,5 +25152,7 @@ SLTV的传奇赛事群星联赛的崭新赛季已经开始了！预计多达120�
 "[english]DOTA_Item_SLTV_Star_Series_X_HUD"	"SLTV Star Series X HUD"
 "DOTA_Item_SLTV_Star_Series_X_Loading_Screen"	"SLTV群星联赛第十赛季载入画面"
 "[english]DOTA_Item_SLTV_Star_Series_X_Loading_Screen"	"SLTV Star Series X Loading Screen"
+"DOTA_Item_Demon_Eater"	"噬魔之王"
+"[english]DOTA_Item_Demon_Eater"	"Demon Eater"
 }
 }

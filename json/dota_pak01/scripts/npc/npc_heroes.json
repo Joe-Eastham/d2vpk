@@ -16184,6 +16184,7 @@
       "ModelScale": "0.75",
       "LoadoutScale": "1.0",
       "HeroGlowColor": "194 80 163",
+      "BotImplemented": "1",
       "PickSound": "skywrath_mage_drag_spawn_02",
       "BanSound": "skywrath_mage_drag_anger_13",
       "NoCombine": "1",
