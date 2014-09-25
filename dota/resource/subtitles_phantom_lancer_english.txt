@@ -213,7 +213,7 @@
 		"phantom_lancer_plance_item_01"		"Manta style."
 		"phantom_lancer_plance_item_02"		"Butterfly."
 		"phantom_lancer_plance_item_03"		"Heart of Tarrasque."
-		"phantom_lancer_plance_item_04"		"Monkey King bar!"
+		"phantom_lancer_plance_item_04"		"Monkey King Bar!"
 		"phantom_lancer_plance_item_05"		"Vanguard."
 		"phantom_lancer_plance_item_06"		"Radiance."
 		"phantom_lancer_plance_item_07"		"Eye of Skaadi."
