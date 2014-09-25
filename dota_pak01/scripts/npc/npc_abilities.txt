@@ -2011,7 +2011,7 @@
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
 		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"	
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"							// Changes dynamically with scepter	
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 		"FightRecapLevel"				"2"
 		
@@ -3033,7 +3033,7 @@
 		"ID"					"5063"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"OnCastbar"					"0"
 		
 		
@@ -3368,7 +3368,7 @@
 	}
 
 	//=================================================================================================================
-	// Ability: Phantom Lancer's Phantom Edge
+	// Ability: Phantom Lancer's Phantom Rush / Phantom Edge
 	//=================================================================================================================
 	"phantom_lancer_phantom_edge"
 	{
@@ -6878,14 +6878,19 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"enemy_movespeed_bonus_pct"	"-8 -16 -24 -30"
+				"evasion_pct_tooltip"	"100"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"radius"					"300 300 300 300"
+				"enemy_movespeed_bonus_pct"	"-8 -16 -24 -30"
 			}
 			"04"
+			{
+				"var_type"					"FIELD_INTEGER"
+				"radius"					"300 300 300 300"
+			}
+			"05"
 			{
 				"var_type"					"FIELD_FLOAT"
 				"duration"					"3 4 5 6"
@@ -12988,7 +12993,6 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
 		"FightRecapLevel"				"1"
@@ -14935,7 +14939,7 @@
 		"ID"							"5335"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 		
 		// Special
 		//-------------------------------------------------------------------------------------------------------------
@@ -17960,28 +17964,28 @@
 			"02"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"bonus_night_vision"		"1000"
+				"speed"				"650"
 			}
 			"03"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"crit_chance"				"30 30 30"
+				"bonus_night_vision"		"1000"
 			}
 			"04"
 			{
 				"var_type"					"FIELD_INTEGER"
-				"crit_damage"				"170 170 170"
+				"crit_chance"				"30 30 30"
 			}
 			"05"
 			{
-				"var_type"					"FIELD_FLOAT"
-				"transformation_time"		"1.5"
+				"var_type"					"FIELD_INTEGER"
+				"crit_damage"				"170 170 170"
 			}
 			"06"
 			{
-				"var_type"					"FIELD_INTEGER"
-				"speed"				"650"
-			}
+				"var_type"					"FIELD_FLOAT"
+				"transformation_time"		"1.5"
+			}			
 		}
 	}
 
@@ -25917,43 +25921,43 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rock_damage"			"125"
+				"rock_search_aoe"				"200"
 			}
 			"03"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"speed"					"1200"
+				"rock_damage"			"125"
 			}
 			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"silence_duration"		"3.5 4.0 4.5 5.0"
+				"stun_duration"			"0.75 1.25 1.75 2.25"
 			}
 			"05"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"unit_distance"			"500.0 600.0 700.0 800.0"
+				"var_type"				"FIELD_INTEGER"
+				"speed"					"1200"
 			}
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"rock_distance"			"2000.0"
+				"silence_duration"		"3.5 4.0 4.5 5.0"
 			}
 			"07"
 			{
 				"var_type"				"FIELD_FLOAT"
-				"stun_duration"			"0.75 1.25 1.75 2.25"
+				"unit_distance"			"500.0 600.0 700.0 800.0"
 			}
 			"08"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"remnant_smash_radius_tooltip"			"200"
-			}
+				"var_type"				"FIELD_FLOAT"
+				"rock_distance"			"2000.0"
+			}			
 			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rock_search_aoe"				"200"
-			}
+				"remnant_smash_radius_tooltip"			"200"
+			}			
 		}
 	}
 
@@ -26004,45 +26008,44 @@
 			}
 			"04"
 			{
-				"var_type"				"FIELD_INTEGER"
-				"damage"				"90"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"rock_damage"			"135"
-			}
-			"06"
-			{
 				"var_type"				"FIELD_FLOAT"
 				"distance"				"800.0"
 			}
-			"07"
+			"05"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"rock_distance"			"1600.0"
 			}
-			"08"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"slow_duration"			"2.0"
-			}
-			"09"
+			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"delay"					"0.6"
 			}
-			"10"
+			"07"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage"				"90"
+			}
+			"08"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"rock_damage"			"135"
+			}
+			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"move_slow"				"80"
 			}
-			"11"
+			"10"
 			{
 				"var_type"				"FIELD_INTEGER"
 				"attack_slow"			"80"
 			}
-			
+			"11"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"slow_duration"			"2.0"
+			}
 		}
 	}
 
@@ -26263,23 +26266,23 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"rock_search_radius"			"400"
+				"damage_per_second"			"50 75 100"
 			}
 			"03"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"rock_explosion_radius"			"600"
-			}
-			"04"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"damage_duration"			"6.0"
 			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"rock_search_radius"			"400"
+			}
 			"05"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"damage_per_second"			"50 75 100"
-			}
+				"rock_explosion_radius"			"600"
+			}			
 			"06"
 			{
 				"var_type"				"FIELD_FLOAT"
@@ -27057,7 +27060,8 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"  
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"	
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"FightRecapLevel"				"2"
@@ -31724,6 +31728,7 @@
 		"ID"							"5599"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -31789,6 +31794,7 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ID"							"5600"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN | DOTA_ABILITY_BEHAVIOR_AOE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -31856,6 +31862,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
 		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"FightRecapLevel"				"1"
 
@@ -31915,6 +31922,7 @@
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
 		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
 
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------

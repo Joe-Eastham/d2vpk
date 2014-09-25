@@ -14548,8 +14548,8 @@
 	}
 	"models/items/courier/lilnova/lilnova_flying.mdl"
 	{
-		"PortraitPosition"		"144.998245 -115.866371 76.030029"
-		"PortraitLookAt"		"10.000002 137.700119 0.000000"
+		"PortraitPosition" 		"148.16 -121.67 105.37"
+		"PortraitLookAt"		"10.00 137.70 0.00"
 		"PortraitFOV"		"24.958035"
 		"PortraitFar"		"1500.000000"
 		"PortraitLightPosition"		"169.408173 155.566299 267.000000"

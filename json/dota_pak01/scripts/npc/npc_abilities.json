@@ -1188,7 +1188,7 @@
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
       "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
-      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
       "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
       "FightRecapLevel": "2",
       "AbilityCastRange": "600",
@@ -1831,7 +1831,7 @@
       "ID": "5063",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_AURA",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
-      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "OnCastbar": "0",
       "AbilityCastRange": "900",
       "AbilitySpecial": [
@@ -4561,6 +4561,9 @@
             50,
             50
           ]
+        },
+        {
+          "evasion_pct_tooltip": 100
         },
         {
           "enemy_movespeed_bonus_pct": [
@@ -8924,7 +8927,6 @@
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_ATTACK",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
-      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES",
       "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
       "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
       "FightRecapLevel": "1",
@@ -10458,7 +10460,7 @@
       "ID": "5335",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
       "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
-      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
       "AbilitySpecial": [
         {
           "bonus_damage": [
@@ -12772,6 +12774,9 @@
           ]
         },
         {
+          "speed": 650
+        },
+        {
           "bonus_night_vision": 1000
         },
         {
@@ -12790,9 +12795,6 @@
         },
         {
           "transformation_time": 1.5
-        },
-        {
-          "speed": 650
         }
       ]
     },
@@ -18227,7 +18229,18 @@
           "radius": 200
         },
         {
+          "rock_search_aoe": 200
+        },
+        {
           "rock_damage": 125
+        },
+        {
+          "stun_duration": [
+            0.75,
+            1.25,
+            1.75,
+            2.25
+          ]
         },
         {
           "speed": 1200
@@ -18252,18 +18265,7 @@
           "rock_distance": 2000.0
         },
         {
-          "stun_duration": [
-            0.75,
-            1.25,
-            1.75,
-            2.25
-          ]
-        },
-        {
           "remnant_smash_radius_tooltip": 200
-        },
-        {
-          "rock_search_aoe": 200
         }
       ]
     },
@@ -18287,28 +18289,28 @@
           "rock_speed": 1600
         },
         {
-          "damage": 90
-        },
-        {
-          "rock_damage": 135
-        },
-        {
           "distance": 800.0
         },
         {
           "rock_distance": 1600.0
         },
         {
-          "slow_duration": 2.0
+          "delay": 0.6
         },
         {
-          "delay": 0.6
+          "damage": 90
+        },
+        {
+          "rock_damage": 135
         },
         {
           "move_slow": 80
         },
         {
           "attack_slow": 80
+        },
+        {
+          "slow_duration": 2.0
         }
       ]
     },
@@ -18429,20 +18431,20 @@
           "cast_radius": 300
         },
         {
-          "rock_search_radius": 400
-        },
-        {
-          "rock_explosion_radius": 600
-        },
-        {
-          "damage_duration": 6.0
-        },
-        {
           "damage_per_second": [
             50,
             75,
             100
           ]
+        },
+        {
+          "damage_duration": 6.0
+        },
+        {
+          "rock_search_radius": 400
+        },
+        {
+          "rock_explosion_radius": 600
         },
         {
           "damage_interval": 1.0
@@ -18929,6 +18931,7 @@
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_CREEP_HERO",
       "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
       "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "FightRecapLevel": "2",
@@ -21333,6 +21336,7 @@
       "ID": "5599",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
       "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "AbilityCastRange": "100",
       "AbilityCastPoint": "0.0 0.0 0.0 0.0",
       "AbilityCooldown": "19 16 13 10",
@@ -21369,6 +21373,7 @@
     "techies_stasis_trap": {
       "ID": "5600",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN | DOTA_ABILITY_BEHAVIOR_AOE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
       "AbilityCastRange": "150",
       "AbilityCastPoint": "1.0",
       "AbilityCooldown": "20.0 16.0 13.0 10.0",
@@ -21407,6 +21412,7 @@
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_POINT",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
       "FightRecapLevel": "1",
       "AbilityCastRange": "100",
@@ -21446,6 +21452,7 @@
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NORMAL_WHEN_STOLEN",
       "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
       "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
       "AbilityCastRange": "500",
       "AbilityCastPoint": "1.5 1.5 1.5",
       "AbilityCooldown": "10.0 10.0 10.0",
