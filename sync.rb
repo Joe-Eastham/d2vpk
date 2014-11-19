@@ -1,22 +1,28 @@
 #!/usr/bin/env ruby
+require 'open3'
 require 'rake'
 
-dota = "#{ENV["HOME"]}/.steam/steam/SteamApps/common/dota\ 2\ test"
+# dota = "#{ENV["HOME"]}/.steam/steam/SteamApps/common/dota\ 2\ test"
 # dota = "#{ENV["HOME"]}/.steam/steam/SteamApps/common/dota\ 2\ beta"
+dota = "#{ENV["HOME"]}/dota\ 2\ test"
 
 sh 'mkdir', '-p', 'dota/resource'
 sh 'cp', '-r', "#{dota}/dota/resource/", 'dota/'
 
 convert = ->(path){
   return if path =~ /ti_2013_podseats\.txt/
-  file = `file "#{path}"`
+
+  file = `file "#{path}"`[/[^:]+:(.*)/, 1].strip
+
   case file
   when /UTF-16 Unicode text/
-    sh 'iconv', '--verbose', '-f', 'utf-16', '-t', 'utf-8', '-o', "#{path}.utf8", path
+    Open3.popen2('iconv', '-f', 'utf-16', '-t', 'utf-8', path){|si, so|
+      File.write("#{path}.utf8", so.read)
+    }
     sh 'mv', "#{path}.utf8", path
-  when /(UTF-8 Unicode|ASCII) text/
+  when /(UTF-8 Unicode|ASCII) text/, /empty/
   else
-    p file
+    p path => file
   end
 
   if file =~ /with CRLF(, CR)? line terminators/

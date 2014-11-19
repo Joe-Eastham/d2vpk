@@ -3,7 +3,7 @@ criterion "IsEnemyriki" "targetclassname" "npc_dota_hero_riki" weight 5 required
 criterion "IsAllyriki" "nearby_ally" "npc_dota_hero_riki" weight 5 required
 criterion "IsRikiInvisibility" "abilityname" "riki_permanent_invisibility" weight 5 required
 criterion "IsSmokeScreen" "abilityname" "riki_smoke_screen" weight 5 required
-criterion "IsRikiLevel6" "level" "6" weight 5 required
+criterion "IsInvisLvl1" "skill2_level" "1" weight 5 required
 
 Response riki_Spawn
 {
@@ -44,7 +44,6 @@ Response riki_Move
 	scene "scenes/riki/riki_riki_ability_blink_01.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_ability_blink_03.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_ability_invis_01.vcd" nodelay noscene 
-	scene "scenes/riki/riki_riki_ability_invis_04.vcd" nodelay noscene 
 }
 
 Rule riki_Move_Rule
@@ -58,7 +57,6 @@ Response riki_Attack
 	scene "scenes/riki/riki_riki_attack_01.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_attack_02.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_attack_03.vcd" nodelay noscene 
-	scene "scenes/riki/riki_riki_attack_04.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_attack_05.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_attack_06.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_attack_07.vcd" nodelay noscene 
@@ -69,6 +67,7 @@ Response riki_Attack
 	scene "scenes/riki/riki_riki_attack_12.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_attack_13.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_attack_14.vcd" nodelay noscene 
+	scene "scenes/riki/riki_riki_cast_03.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_ability_blink_02.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_ability_blink_04.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_ability_blink_05.vcd" nodelay noscene 
@@ -84,8 +83,8 @@ Response riki_CastOrder
 {
 	scene "scenes/riki/riki_riki_cast_01.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_cast_02.vcd" nodelay noscene 
-	scene "scenes/riki/riki_riki_cast_03.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_cast_04.vcd" nodelay noscene 
+	scene "scenes/riki/riki_riki_ability_invis_02.vcd" nodelay noscene 
 }
 
 Rule riki_CastOrder_Rule
@@ -123,7 +122,6 @@ Response riki_Kill
 {
 	scene "scenes/riki/riki_riki_ability_blink_06.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_ability_invis_03.vcd" nodelay noscene 
-	scene "scenes/riki/riki_riki_kill_01.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_kill_02.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_kill_03.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_kill_04.vcd" nodelay noscene 
@@ -157,15 +155,26 @@ Rule riki_Kill_Rule
 	response riki_Kill
 }
 
-Response riki_LevelUpIsRikiLevel6
+Response riki_LearnIsRikiInvisibilityIsInvisLvl1
 {
-	scene "scenes/riki/riki_riki_ability_invis_02.vcd" nodelay noscene 
+	scene "scenes/riki/riki_riki_ability_invis_04.vcd" nodelay noscene speakonce
 }
 
-Rule riki_LevelUpIsRikiLevel6_Rule
+Rule riki_LearnIsRikiInvisibilityIsInvisLvl1_Rule
 {
-	criteria LevelUp Isriki IsRikiLevel6
-	response riki_LevelUpIsRikiLevel6
+	criteria Learn Isriki IsRikiInvisibility IsInvisLvl1
+	response riki_LearnIsRikiInvisibilityIsInvisLvl1
+}
+
+Response riki_CustomIsGameStart
+{
+	scene "scenes/riki/riki_riki_ability_invis_05.vcd" nodelay noscene 
+}
+
+Rule riki_CustomIsGameStart_Rule
+{
+	criteria Custom Isriki IsGameStart
+	response riki_CustomIsGameStart
 }
 
 Response riki_LevelUp
@@ -182,17 +191,6 @@ Rule riki_LevelUp_Rule
 {
 	criteria LevelUp Isriki 
 	response riki_LevelUp
-}
-
-Response riki_CustomIsGameStart
-{
-	scene "scenes/riki/riki_riki_ability_invis_05.vcd" nodelay noscene 
-}
-
-Rule riki_CustomIsGameStart_Rule
-{
-	criteria Custom Isriki IsGameStart
-	response riki_CustomIsGameStart
 }
 
 Response riki_LastHit
@@ -226,7 +224,6 @@ Response riki_Death
 	scene "scenes/riki/riki_riki_death_07.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_death_08.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_death_09.vcd" nodelay noscene 
-	scene "scenes/riki/riki_riki_death_10.vcd" nodelay noscene 
 }
 
 Rule riki_Death_Rule
@@ -268,7 +265,6 @@ Rule riki_Respawn_Rule
 Response riki_Select
 {
 	scene "scenes/riki/riki_riki_rare_01.vcd" nodelay noscene 
-	scene "scenes/riki/riki_riki_rare_02.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_rare_03.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_rare_04.vcd" nodelay noscene 
 	scene "scenes/riki/riki_riki_rare_05.vcd" nodelay noscene 
@@ -438,7 +434,7 @@ Rule riki_ImmortalityChance_25%_Rule
 
 Response riki_PowerupIsPowerupBounty
 {
-	scene "scenes/riki/riki_riki_lasthit_09.vcd" nodelay noscene 
+	scene "scenes/riki/riki_riki_lasthit_09.vcd" nodelay noscene respeakdelay 300
 }
 
 Rule riki_PowerupIsPowerupBounty_Rule

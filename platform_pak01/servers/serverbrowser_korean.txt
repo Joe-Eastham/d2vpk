@@ -351,7 +351,7 @@ Cheating will result in a permanent ban."
 "ServerBrowser_FindGames"	"이 주소에서 게임 찾기..."
 "[english]ServerBrowser_FindGames"	"Find games at this address..."
 
-"ServerBrowser_SteamRunning"		"﻿Steam 베타가 서버 찾기 기능을 실행하고 있습니다."
+"ServerBrowser_SteamRunning"		"Steam 베타가 서버 찾기 기능을 실행하고 있습니다."
 "[english]ServerBrowser_SteamRunning"		"Steam Beta must be running to make use of Find Servers"
 
 "ServerBrowser_CustomTab"				"사용자 지정"
