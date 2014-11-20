@@ -314,7 +314,14 @@
       "AbilityDamage": "90 160 230 300",
       "AbilityManaCost": "125 150 175 200",
       "AbilitySpecial": [
-
+        {
+          "tooltip_brain_sap_heal_amt": [
+            90,
+            160,
+            230,
+            300
+          ]
+        }
       ]
     },
     "bane_fiends_grip": {
@@ -1706,6 +1713,13 @@
           ]
         },
         {
+          "tooltip_illusion_damage_out_pct": [
+            50.0,
+            50.0,
+            50.0
+          ]
+        },
+        {
           "illusion_incoming_dmg_pct_tooltip": [
             100,
             100,
@@ -1971,6 +1985,14 @@
           ]
         },
         {
+          "tooltip_illusion_damage": [
+            20,
+            20,
+            20,
+            20
+          ]
+        },
+        {
           "illusion_damage_in_pct": [
             300,
             300,
@@ -1979,11 +2001,11 @@
           ]
         },
         {
-          "tooltip_illusion_damage": [
-            20,
-            20,
-            20,
-            20
+          "tooltip_illusion_total_damage_in_pct": [
+            400,
+            400,
+            400,
+            400
           ]
         },
         {
@@ -2032,6 +2054,13 @@
       "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
       "AbilitySpecial": [
         {
+          "max_illusions": [
+            5,
+            7,
+            9
+          ]
+        },
+        {
           "proc_chance_pct": [
             40,
             45,
@@ -2042,23 +2071,19 @@
           "illusion_proc_chance_pct": 8
         },
         {
-          "max_illusions": [
-            6,
-            8,
-            10
-          ]
-        },
-        {
           "illusion_duration": 8
         },
         {
           "illusion_damage_out_pct": -84
         },
         {
+          "tooltip_illusion_damage": 16
+        },
+        {
           "illusion_damage_in_pct": 400
         },
         {
-          "tooltip_illusion_damage": 16
+          "tooltip_total_illusion_damage_in_pct": 500
         },
         {
           "illusion_from_illusion_duration": 4
@@ -2623,7 +2648,7 @@
       "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "AbilityCastRange": "600",
       "AbilityCastPoint": "0.3 0.3 0.3 0.3",
-      "AbilityCooldown": "25.0",
+      "AbilityCooldown": "32 30 28 26",
       "AbilityManaCost": "50",
       "AbilitySpecial": [
         {
@@ -2786,9 +2811,9 @@
         },
         {
           "strike_interval_scepter": [
-            0.55,
-            0.45,
-            0.35
+            0.6,
+            0.5,
+            0.4
           ]
         }
       ]
@@ -2918,7 +2943,7 @@
       "AbilityCastRange": "600",
       "AbilityCastPoint": "0.5 0.5 0.5 0.5",
       "AbilityCooldown": "8.0 8.0 8.0 8.0",
-      "AbilityDamage": "100 175 250 300",
+      "AbilityDamage": "75 150 225 300",
       "AbilityManaCost": "105 120 140 165",
       "AbilitySpecial": [
         {
@@ -3056,7 +3081,7 @@
       "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "FightRecapLevel": "2",
       "AbilityCastPoint": "0.5 0.5 0.5",
-      "AbilityCooldown": "135.0",
+      "AbilityCooldown": "145.0",
       "AbilityDuration": "30.0 30.0 30.0",
       "AbilityManaCost": "200 300 400",
       "AbilitySpecial": [
@@ -4347,6 +4372,9 @@
           ]
         },
         {
+          "creep_damage_tooltip": 1000
+        },
+        {
           "damage": 100.0
         }
       ]
@@ -4958,6 +4986,12 @@
       "AbilityManaCost": "120 120 120 120",
       "AbilitySpecial": [
         {
+          "radius": 180
+        },
+        {
+          "duration_tooltip": 12
+        },
+        {
           "bonus_damage": [
             16,
             24,
@@ -4969,13 +5003,7 @@
           "bonus_damage_threshold": 100
         },
         {
-          "radius": 180
-        },
-        {
           "ticks": 3
-        },
-        {
-          "duration_tooltip": 12
         }
       ]
     },
@@ -5896,9 +5924,9 @@
         },
         {
           "golem_hp_tooltip": [
-            1000,
-            1500,
-            2000
+            900,
+            1200,
+            1500
           ]
         },
         {
@@ -5919,6 +5947,20 @@
           "number_of_golems_scepter": 2
         },
         {
+          "golem_hp_tooltip_scepter": [
+            675,
+            900,
+            1125
+          ]
+        },
+        {
+          "golem_dmg_tooltip_scepter": [
+            56,
+            75,
+            94
+          ]
+        },
+        {
           "hp_dmg_reduction_scepter": 25
         },
         {
@@ -5931,14 +5973,14 @@
       "AbilityType": "DOTA_ABILITY_TYPE_BASIC",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
       "MaxLevel": "3",
-      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
-      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "AbilitySpecial": [
         {
           "damage": [
-            100,
-            150,
-            200
+            80,
+            115,
+            150
           ]
         },
         {
@@ -6645,7 +6687,7 @@
       "FightRecapLevel": "2",
       "AbilityCastRange": "600",
       "AbilityCastPoint": "0.35 0.35 0.35",
-      "AbilityCooldown": "120.0 100.0 80.0",
+      "AbilityCooldown": "130.0 110.0 90.0",
       "AbilityManaCost": "150 175 200",
       "AbilityModifierSupportBonus": "50",
       "AbilitySpecial": [
@@ -6674,7 +6716,7 @@
           ]
         },
         {
-          "vision_radius": 425
+          "vision_radius": 475
         }
       ]
     },
@@ -7094,7 +7136,7 @@
           "movement_speed_bonus": -30
         },
         {
-          "trap_radius": 375
+          "trap_radius": 400
         },
         {
           "trap_duration": 5.0
@@ -7780,6 +7822,14 @@
             4,
             5,
             6
+          ]
+        },
+        {
+          "tooltip_max_targets_inc_dazzle": [
+            4,
+            5,
+            6,
+            7
           ]
         },
         {
@@ -8530,13 +8580,6 @@
       "AbilityManaCost": "200 300 400",
       "AbilitySpecial": [
         {
-          "duration": [
-            15.0,
-            30.0,
-            45.0
-          ]
-        },
-        {
           "damage": [
             150,
             150,
@@ -8544,10 +8587,10 @@
           ]
         },
         {
-          "replica_damage_incoming": [
-            300,
-            300,
-            300
+          "duration": [
+            15.0,
+            30.0,
+            45.0
           ]
         },
         {
@@ -8558,24 +8601,31 @@
           ]
         },
         {
-          "width": [
-            1000,
-            1000,
-            1000
-          ]
-        },
-        {
-          "replica_damage_outgoing_scepter": [
-            0,
-            20,
-            40
-          ]
-        },
-        {
           "tooltip_outgoing": [
             70,
             80,
             90
+          ]
+        },
+        {
+          "replica_damage_incoming": [
+            300,
+            300,
+            300
+          ]
+        },
+        {
+          "tooltip_replica_total_damage_incoming": [
+            400,
+            400,
+            400
+          ]
+        },
+        {
+          "width": [
+            1000,
+            1000,
+            1000
           ]
         },
         {
@@ -8586,6 +8636,13 @@
             500,
             900,
             1300
+          ]
+        },
+        {
+          "replica_damage_outgoing_scepter": [
+            0,
+            20,
+            40
           ]
         },
         {
@@ -8802,13 +8859,6 @@
             6.0,
             7.0,
             8.0
-          ]
-        },
-        {
-          "health_regen": [
-            25,
-            25,
-            25
           ]
         },
         {
@@ -9530,6 +9580,7 @@
     "bounty_hunter_wind_walk": {
       "ID": "5287",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_CHANNEL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
       "AbilityCooldown": "15.0 15.0 15.0 15.0",
       "AbilityCastPoint": "0.0 0.0 0.0 0.0",
@@ -10530,6 +10581,12 @@
           ]
         },
         {
+          "illusion_damage_outgoing": -70
+        },
+        {
+          "tooltip_outgoing": 30
+        },
+        {
           "illusion_damage_incoming": [
             100,
             100,
@@ -10537,10 +10594,10 @@
           ]
         },
         {
-          "illusion_damage_outgoing": [
-            -60,
-            -60,
-            -60
+          "tooltip_illusion_total_damage_incoming": [
+            200,
+            200,
+            200
           ]
         },
         {
@@ -10548,13 +10605,6 @@
             1.0,
             1.0,
             1.0
-          ]
-        },
-        {
-          "tooltip_outgoing": [
-            40,
-            40,
-            40
           ]
         }
       ]
@@ -12107,7 +12157,7 @@
       "MaxLevel": "1",
       "HotKeyOverride": "T",
       "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
-      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "FightRecapLevel": "1",
       "AbilityCastRange": "0",
       "AbilityCastPoint": "0",
@@ -12600,25 +12650,11 @@
       "AbilityCastRange": "600 650 700",
       "AbilityCastPoint": "0.25 0.25 0.25",
       "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
-      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "FightRecapLevel": "2",
       "AbilityCooldown": "160.0 160.0 160.0",
       "AbilityManaCost": "175 250 325",
       "AbilitySpecial": [
-        {
-          "radius": [
-            375,
-            475,
-            575
-          ]
-        },
-        {
-          "cast_range": [
-            600,
-            650,
-            700
-          ]
-        },
         {
           "damage_multiplier": [
             8,
@@ -12634,10 +12670,17 @@
           ]
         },
         {
-          "cast_range_scepter": [
-            700,
-            750,
-            800
+          "radius": [
+            375,
+            475,
+            575
+          ]
+        },
+        {
+          "cast_range": [
+            600,
+            650,
+            700
           ]
         },
         {
@@ -12645,6 +12688,13 @@
             9,
             10,
             11
+          ]
+        },
+        {
+          "cast_range_scepter": [
+            700,
+            750,
+            800
           ]
         }
       ]
@@ -13220,7 +13270,7 @@
       "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
       "FightRecapLevel": "2",
       "AbilityCooldown": "140.0 120.0 100.0",
-      "AbilityCastPoint": "0.4 0.4 0.4",
+      "AbilityCastPoint": "0.65",
       "AbilityManaCost": "125 150 175",
       "AbilitySpecial": [
         {
@@ -13231,11 +13281,7 @@
           ]
         },
         {
-          "split_duration": [
-            0.85,
-            0.85,
-            0.85
-          ]
+          "split_duration": 0.6
         }
       ]
     },
@@ -13459,6 +13505,14 @@
       "AbilityManaCost": "120 120 120 120",
       "AbilitySpecial": [
         {
+          "disruption_duration": [
+            2.5,
+            2.5,
+            2.5,
+            2.5
+          ]
+        },
+        {
           "illusion_duration": [
             5.0,
             6.0,
@@ -13475,14 +13529,6 @@
           ]
         },
         {
-          "illusion_incoming_damage": [
-            50.0,
-            50.0,
-            50.0,
-            50.0
-          ]
-        },
-        {
           "illusion_outgoing_tooltip": [
             30.0,
             40.0,
@@ -13491,11 +13537,19 @@
           ]
         },
         {
-          "disruption_duration": [
-            2.5,
-            2.5,
-            2.5,
-            2.5
+          "illusion_incoming_damage": [
+            50.0,
+            50.0,
+            50.0,
+            50.0
+          ]
+        },
+        {
+          "tooltip_total_illusion_incoming_damage": [
+            150.0,
+            150.0,
+            150.0,
+            150.0
           ]
         }
       ]
@@ -13762,6 +13816,16 @@
       "AbilityManaCost": "125 200 275",
       "AbilitySpecial": [
         {
+          "images_count": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "extra_phantasm_chance_pct_tooltip": 50
+        },
+        {
           "illusion_duration": 34.0
         },
         {
@@ -13772,6 +13836,13 @@
           ]
         },
         {
+          "outgoing_damage_tooltip": [
+            100,
+            100,
+            100
+          ]
+        },
+        {
           "incoming_damage": [
             100,
             100,
@@ -13779,10 +13850,10 @@
           ]
         },
         {
-          "images_count": [
-            1,
-            2,
-            3
+          "incoming_damage_tooltip": [
+            200,
+            200,
+            200
           ]
         },
         {
@@ -14045,6 +14116,9 @@
         },
         {
           "radius": 675
+        },
+        {
+          "eyes_radius": 800
         }
       ]
     },
@@ -14361,6 +14435,14 @@
       "AbilityManaCost": "120 130 140 150",
       "AbilitySpecial": [
         {
+          "tooltip_tombstone_health": [
+            200,
+            400,
+            600,
+            800
+          ]
+        },
+        {
           "duration": [
             15.0,
             20.0,
@@ -14377,15 +14459,15 @@
           ]
         },
         {
-          "zombie_interval": 3.0
-        },
-        {
           "health_threshold": [
             100,
             200,
             300,
             400
           ]
+        },
+        {
+          "zombie_interval": 3.0
         }
       ]
     },
@@ -15056,11 +15138,27 @@
           ]
         },
         {
+          "outgoing_damage_tooltip": [
+            20,
+            25,
+            30,
+            35
+          ]
+        },
+        {
           "incoming_damage": [
             500,
             400,
             300,
             200
+          ]
+        },
+        {
+          "tooltip_incoming_damage_total_pct": [
+            600,
+            500,
+            400,
+            300
           ]
         },
         {
@@ -15073,14 +15171,6 @@
         },
         {
           "invuln_duration": 0.3
-        },
-        {
-          "outgoing_damage_tooltip": [
-            20,
-            25,
-            30,
-            35
-          ]
         }
       ]
     },
@@ -15161,7 +15251,7 @@
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
       "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
       "FightRecapLevel": "2",
-      "AbilityCastPoint": "0.65",
+      "AbilityCastPoint": "0.8",
       "AbilityCastRange": "1250 1250 1250",
       "AbilityCooldown": "180.0 120.0 60.0",
       "AbilityManaCost": "100 100 100",
@@ -15795,6 +15885,7 @@
     "wisp_spirits": {
       "ID": "5486",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET",
+      "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
       "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
       "AbilityCastPoint": "0",
       "AbilityCooldown": "20.0 18.0 16.0 14.0",
@@ -16543,6 +16634,7 @@
     "centaur_return": {
       "ID": "5516",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_PASSIVE",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "AbilityUnitDamageType": "DAMAGE_TYPE_PHYSICAL",
       "AbilitySpecial": [
         {
@@ -17429,7 +17521,7 @@
       "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
       "AbilityCastRange": "700",
       "AbilityCastPoint": "0.1 0.1 0.1 0.1",
-      "AbilityCooldown": "11.0 11.0 11.0 11.0",
+      "AbilityCooldown": "14",
       "AbilityManaCost": "80 90 100 110",
       "AbilitySpecial": [
         {
@@ -17467,7 +17559,7 @@
           "radius": 170
         },
         {
-          "duration": 2.2
+          "duration": 2.4
         },
         {
           "damage": [
@@ -18658,15 +18750,15 @@
       "AbilityManaCost": "80",
       "AbilitySpecial": [
         {
+          "illusion_duration": 32.0
+        },
+        {
           "illusion_outgoing_damage": [
             70.0,
             60.0,
             50.0,
             40.0
           ]
-        },
-        {
-          "illusion_incoming_damage": 200.0
         },
         {
           "illusion_outgoing_tooltip": [
@@ -18677,7 +18769,10 @@
           ]
         },
         {
-          "illusion_duration": 32.0
+          "illusion_incoming_damage": 325.0
+        },
+        {
+          "illusion_incoming_damage_total_tooltip": 425.0
         }
       ]
     },
@@ -18715,6 +18810,9 @@
             60,
             80
           ]
+        },
+        {
+          "speed_loss": 25
         }
       ]
     },
@@ -18728,7 +18826,7 @@
       "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
       "FightRecapLevel": "2",
       "AbilityCooldown": "120.0 80.0 40.0",
-      "AbilityCastRange": "250",
+      "AbilityCastRange": "325",
       "AbilityCastPoint": "0.35",
       "AbilityManaCost": "200 100 0",
       "AbilitySpecial": [
@@ -19044,10 +19142,12 @@
     },
     "oracle_fortunes_end": {
       "ID": "5637",
-      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_CHANNELLED | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_CHANNEL",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_INVULNERABLE",
       "AbilityUnitDamageType": "DAMAGE_TYPE_MAGICAL",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
       "FightRecapLevel": "1",
       "AbilityCastRange": "650",
       "AbilityCastPoint": "0.3",
@@ -19064,19 +19164,19 @@
           ]
         },
         {
-          "radius": 215
-        },
-        {
           "bolt_speed": 1200
         },
         {
-          "minimum_purge_duration": 0.3
+          "minimum_purge_duration": 0.5
         },
         {
           "maximum_purge_duration": 2.5
         },
         {
-          "purge_rate": 5
+          "radius": 215
+        },
+        {
+          "max_channel_time_tooltip": 2.9
         }
       ]
     },
@@ -19084,7 +19184,9 @@
       "ID": "5638",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_ENEMY | DOTA_UNIT_TARGET_TEAM_FRIENDLY",
-      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_MECHANICAL",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ALLIES_NO",
       "AbilityCastRange": "700",
       "AbilityCastPoint": "0.3",
       "AbilityCooldown": "12.0",
@@ -19100,6 +19202,9 @@
             5.0,
             6.0
           ]
+        },
+        {
+          "magic_damage_resistance_pct_tooltip": 100
         }
       ]
     },
@@ -19108,6 +19213,8 @@
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY | DOTA_UNIT_TARGET_TEAM_ENEMY",
       "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
+      "AbilityUnitTargetFlags": "DOTA_UNIT_TARGET_FLAG_NOT_MAGIC_IMMUNE_ALLIES",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
       "FightRecapLevel": "1",
       "AbilityCastRange": "750",
       "AbilityCastPoint": "0.3",
@@ -19123,15 +19230,23 @@
           ]
         },
         {
-          "duration": 9.0
-        },
-        {
           "heal_per_second": [
             11.0,
             22.0,
             33.0,
             44.0
           ]
+        },
+        {
+          "total_heal_tooltip": [
+            99,
+            198,
+            297,
+            396
+          ]
+        },
+        {
+          "duration": 9.0
         },
         {
           "tick_rate": 1.0
@@ -19143,7 +19258,7 @@
       "AbilityType": "DOTA_ABILITY_TYPE_ULTIMATE",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_UNIT_TARGET",
       "AbilityUnitTargetTeam": "DOTA_UNIT_TARGET_TEAM_FRIENDLY",
-      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC",
+      "AbilityUnitTargetType": "DOTA_UNIT_TARGET_HERO",
       "AbilityCastRange": "1000",
       "AbilityCastPoint": "0.3",
       "AbilityCooldown": "20.0",
@@ -21332,6 +21447,12 @@
         }
       ]
     },
+    "shoot_firework": {
+      "ID": "5650",
+      "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_DIRECTIONAL | DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE",
+      "AbilityCastRange": "1800",
+      "AbilityCastPoint": "0.5"
+    },
     "techies_land_mines": {
       "ID": "5599",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE",
@@ -21444,6 +21565,9 @@
         },
         {
           "respawn_time_percentage": 0.5
+        },
+        {
+          "respawn_time_percentage_tooltip": 50
         }
       ]
     },
