@@ -40,6 +40,19 @@
 				"input2" "1000"
 			}
 		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+ 			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+		}
 	}
 }
 
@@ -65,6 +78,19 @@
 			"block_dist"
 			{
 				"input2" "1000"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+ 			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
 			}
 		}
 	}
@@ -199,7 +225,7 @@
 "Creep_Good_Engine.Attack"
 {
 	"channel"		"CHAN_WEAPON"
-	"volume"		"0.6"
+	"volume"		"0.3"
 	"soundlevel"  	"SNDLVL_75dB"
 	"pitch"			"100"
 	"rndwave"
@@ -217,6 +243,19 @@
 			"block_dist"
 			{
 				"input2" "1500"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+ 			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1500.0"
 			}
 		}
 	}
@@ -242,7 +281,7 @@
 "Creep_Good_Engine.Move"
 {
 	"channel"		"CHAN_BODY"
-	"volume"		"1"
+	"volume"		"0.5"
 	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"80, 100"
 	"rndwave"
@@ -337,6 +376,19 @@
 				"input2" "1000"
 			}
 		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+ 			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
+			}
+		}
 	}
 }
 
@@ -363,6 +415,19 @@
 			"block_dist"
 			{
 				"input2" "1000"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+ 			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1000.0"
 			}
 		}
 	}
@@ -496,7 +561,7 @@
 "Creep_Bad_Engine.Attack"
 {
 	"channel"		"CHAN_WEAPON"
-	"volume"		"1"
+	"volume"		"0.5"
 	"soundlevel"  	"SNDLVL_75dB"
 	"pitch"			"95, 105"
 	"wave"	"weapons/creep/bad/engine_attack01.wav"
@@ -509,6 +574,19 @@
 			"block_dist"
 			{
 				"input2" "1500"
+			}
+		}
+		"update_stack"
+		{
+			"import_stack" "dota_update_default"
+			"mixer"
+			{
+				"mixgroup" "Creeps"
+			}
+ 			"volume_falloff_linear"
+			{
+				"input_min" "10.0"
+				"input_max" "1500.0"
 			}
 		}
 	}
@@ -534,7 +612,7 @@
 "Creep_Bad_Engine.Move"
 {
 	"channel"		"CHAN_BODY"
-	"volume"		"1"
+	"volume"		"0.5"
 	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"80, 100"
 	"rndwave"
@@ -985,6 +1063,7 @@
 			{
 				"input2" "2000"
 			}
+			"import_stack" "dota_water_footsteps_start"
 		}
 	}
 }
@@ -1013,6 +1092,7 @@
 			{
 				"input2" "2000"
 			}
+			"import_stack" "dota_water_footsteps_start"
 		}
 	}
 }
@@ -1020,8 +1100,8 @@
 "n_creep_Giant.Footstep"
 {
 	"channel"		"CHAN_BODY"
-	"volume"		"0.8, 0.9"
-	"soundlevel"  	"SNDLVL_75dB"
+	"volume"		"0.4, 0.6"
+	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95, 105"
 	"rndwave"
 	{
@@ -1040,6 +1120,7 @@
 			{
 				"input2" "2000"
 			}
+			"import_stack" "dota_water_footsteps_start"
 		}
 	}
 }
@@ -1679,7 +1760,7 @@
 {
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
-	"soundlevel"  	"SNDLVL_84dB"
+	"soundlevel"  	"SNDLVL_78dB"
 	"rndwave"
 	{
 		"wave" 	"weapons/creep/neutral/centaur_khan_stomp_01.wav"
@@ -1772,7 +1853,7 @@
 "n_creep_OgreMagi.FrostArmor"
 {
 	"channel"		"CHAN_BODY"
-	"soundlevel"	"SNDLVL_81dB"
+	"soundlevel"	"SNDLVL_78dB"
 	"wave"			"weapons\creep\neutral\orgremagi_iceboost.wav"
 	"operator_stacks"
 	{
@@ -1905,7 +1986,7 @@
 "n_creep_Thunderlizard_Big.Stomp"
 {
 	"channel"		"CHAN_BODY"
-	"soundlevel"	"SNDLVL_85dB"
+	"soundlevel"	"SNDLVL_78dB"
 	"wave"			"weapons\creep\neutral\thunderlizard_stomp.wav"
 	"operator_stacks"
 	{
@@ -1922,7 +2003,7 @@
 "n_creep_Thunderlizard_Big.Roar"
 {
 	"channel"		"CHAN_BODY"
-	"soundlevel"	"SNDLVL_85dB"
+	"soundlevel"	"SNDLVL_78dB"
 	"wave"			"weapons\creep\neutral\thunderlizard_roar.wav"
 	"operator_stacks"
 	{
@@ -1941,6 +2022,7 @@
 "n_creep_ForestTrollHighPriest.Heal"
 {
 	"channel"		"CHAN_BODY"
+	"volume"		"0.5"
 	"soundlevel"	"SNDLVL_75dB"
 	"wave"			"weapons\creep\neutral\troll_priest_heal.wav"
 	"operator_stacks"
@@ -1959,7 +2041,7 @@
 "n_creep_TrollWarlord.Ensnare"
 {
 	"channel"		"CHAN_BODY"
-	"soundlevel"	"SNDLVL_84dB"
+	"soundlevel"	"SNDLVL_78dB"
 	"wave"			"weapons\creep\neutral\troll_cast_net.wav"
 	"operator_stacks"
 	{
@@ -1997,7 +2079,7 @@
 {
 	"channel"		"CHAN_WEAPON"
 	"volume"		"1"
-	"soundlevel"  	"SNDLVL_84dB"
+	"soundlevel"  	"SNDLVL_78dB"
 	"rndwave"
 	{
 		"wave" 	"weapons/creep/neutral/ursa_thunder_clap_01.wav"

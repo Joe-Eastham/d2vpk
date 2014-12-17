@@ -39,7 +39,7 @@
 	"PlayerDamage"			"/damage/player/"	""			""				""			""			"60"		"0"		"1"		"80"	"80"
 	"Stingers"				"stingers/"			""			""				""			""			"60"		"0"		"1"		"80"	"40"
 	"Placeholder"			"placeholder"		""			""				""			""			"60"		"0"		"0"		"80"	"80"
-	"Creeps"				"weapons/creep"		""			""				""			""			"40"		"0"		"0"		"80"	"90"
+	"Creeps"				"creep/shared"		""			""				""			""			"40"		"0"		"0"		"80"	"90"
 	"BaseAttacks"			"attack"			""			""				""			""			"50"		"0"		"0"		"90"	"60"
 	"NoDuck"				"items/"			""			""				""			""			"50"		"0"		"0"		"90"	"60"
 	"Weapons"				"weapons"			""			""				""			""			"50"		"0"		"0"		"90"	"60"
@@ -153,7 +153,7 @@
 	"HeroesMuteCreeps"
  	{
  		//grp,		vol, lvl, dsp, solo, mute
- 		"Creeps"	0.0  0.0  0.0  0.0   0.5
+ 		"Creeps"	0.2  0.0  0.0  0.0   0.0
  	}
 
 	"Ultimates"

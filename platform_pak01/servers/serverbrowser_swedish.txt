@@ -351,7 +351,7 @@ Cheating will result in a permanent ban."
 "ServerBrowser_FindGames"	"Hitta spel på denna adress..."
 "[english]ServerBrowser_FindGames"	"Find games at this address..."
 
-"ServerBrowser_SteamRunning"		"Steam Beta måste köras om Sök efter servrar ska användas"
+"ServerBrowser_SteamRunning"		"﻿Steam Beta måste köras om Sök efter servrar ska användas"
 "[english]ServerBrowser_SteamRunning"		"Steam Beta must be running to make use of Find Servers"
 
 "ServerBrowser_CustomTab"				"Anpassad"

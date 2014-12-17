@@ -158,7 +158,6 @@
 		"#dota_tip_advanced_5"		"1"
 		"#dota_tip_advanced_6"		"1"
 		"#dota_tip_advanced_7"		"1"
-		"#dota_tip_advanced_8"		"1"
 		"#dota_tip_advanced_9"		"1"
 		"#dota_tip_advanced_10"		"1"
 		"#dota_tip_advanced_11"		"1"
