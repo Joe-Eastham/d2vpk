@@ -6042,5 +6042,9 @@ Mücadele Puanları Hızlandırıcılarınız sadece Mücadele Puanları kazanı
 "[english]DOTA_Item_Manifold_Paradox_Bundle"	"Manifold Paradox - Preorder"
 "DOTA_Item_Desc_deafESL_World_Championship_2014"	"Dünya Sağır Şampiyonası sağır topluluğu için düzenlenen, dünyanın her yerinden takımları toplayan bir turnuvadır."
 "[english]DOTA_Item_Desc_deafESL_World_Championship_2014"	"The World Deaf Championship in a tournament made for the deaf community, bringing teams from around the world."
+"DOTA_Item_The_Igneous_Stone"	"Volkanik Taş"
+"[english]DOTA_Item_The_Igneous_Stone"	"The Igneous Stone"
+"DOTA_WearableType_Mysterious_Item"	"Gizemli Eşya"
+"[english]DOTA_WearableType_Mysterious_Item"	"Mysterious Item"
 }
 }
