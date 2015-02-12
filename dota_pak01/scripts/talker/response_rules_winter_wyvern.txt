@@ -734,6 +734,7 @@ Rule winter_wyvern_Death_Rule
 Response winter_wyvern_DeathChance_3%
 {
 	scene "scenes/winter_wyvern/winter_wyvern_winwyv_death_07.vcd" nodelay noscene 
+	scene "scenes/winter_wyvern/winter_wyvern_winwyv_death_08.vcd" nodelay noscene 
 	scene "scenes/winter_wyvern/winter_wyvern_winwyv_death_14.vcd" nodelay noscene 
 }
 
@@ -741,17 +742,6 @@ Rule winter_wyvern_DeathChance_3%_Rule
 {
 	criteria Death Iswinter_wyvern Chance_3%
 	response winter_wyvern_DeathChance_3%
-}
-
-Response winter_wyvern_DeathChance_5%
-{
-	scene "scenes/winter_wyvern/winter_wyvern_winwyv_death_08.vcd" nodelay noscene 
-}
-
-Rule winter_wyvern_DeathChance_5%_Rule
-{
-	criteria Death Iswinter_wyvern Chance_5%
-	response winter_wyvern_DeathChance_5%
 }
 
 Response winter_wyvern_DeathIsReincarnating
