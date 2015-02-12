@@ -17630,7 +17630,6 @@
       "GameSoundsFile": "scripts/game_sounds_heroes/game_sounds_winter_wyvern.txt",
       "IdleSoundLoop": "Hero_Winter_Wyvern.IdleLoop",
       "HeroSelectSoundEffect": "Hero_Winter_Wyvern.Pick",
-      "AbilityLayout": "4",
       "Ability1": "winter_wyvern_arctic_burn",
       "Ability2": "winter_wyvern_splinter_blast",
       "Ability3": "winter_wyvern_cold_embrace",

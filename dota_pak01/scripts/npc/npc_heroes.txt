@@ -23674,7 +23674,6 @@
 
 		// Abilities
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityLayout"				"4"
 		"Ability1"					"winter_wyvern_arctic_burn"									
 		"Ability2"					"winter_wyvern_splinter_blast"									
 		"Ability3"					"winter_wyvern_cold_embrace"								

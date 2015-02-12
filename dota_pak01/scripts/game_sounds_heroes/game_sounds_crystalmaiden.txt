@@ -458,6 +458,32 @@
 	}
 }
 
+"Icewrack_Pup.Happy"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.7, 0.9"
+	"soundlevel"  	"SNDLVL_69dB"
+	"pitch"			"95, 105"
+	"rndwave"
+	{
+		"wave"		"physics\movement\hero\crystal_maiden\happy01.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\happy02.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\happy03.wav"
+		"wave"		"physics\movement\hero\crystal_maiden\happy04.wav"
+	}
+	"operator_stacks"
+	{
+		"start_stack"
+		{
+			"import_stack" "start_block_at_distance"
+			"block_dist"
+			{
+				"input2" "2000"
+			}
+		}
+	}
+}
+
 "Icewrack_Pup.idle_alt_shake"
 {
 	"channel"		"CHAN_VOICE"
@@ -598,7 +624,7 @@
 {
 	"channel"		"CHAN_BODY"
 	"volume"		"0.7, 0.9"
-	"soundlevel"  	"SNDLVL_75dB"
+	"soundlevel"  	"SNDLVL_72dB"
 	"pitch"			"95, 105"
 	"rndwave"
 	{
