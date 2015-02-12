@@ -32648,7 +32648,7 @@
 		"ID"							"5651"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"		
-		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_NO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
 		
 		// Casting
 		//-------------------------------------------------------------------------------------------------------------
@@ -32698,25 +32698,20 @@
 			}
 			"07"
 			{
-				"var_type"				"FIELD_FLOAT"
-				"slow_duration"			"4.0"
+				"var_type"				"FIELD_INTEGER"
+				"night_vision_bonus"	"400"
 			}
 			"08"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"night_vision_bonus"	"400"
+				"projectile_speed_bonus"	"500"
 			}
 			"09"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"projectile_speed_bonus"	"500"
-			}
-			"10"
-			{
-				"var_type"				"FIELD_INTEGER"
 				"tree_destruction_radius"	"250"
 			}
-			"11"
+			"10"
 			{
 				"var_type"				"FIELD_FLOAT"
 				"attack_point"			"0.1"
@@ -32763,7 +32758,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"projectile_speed"		"500"
+				"projectile_speed"		"600"
 			}
 			"02"
 			{
