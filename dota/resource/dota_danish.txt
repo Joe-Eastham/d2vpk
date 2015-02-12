@@ -33062,7 +33062,7 @@ By this ageless crucible the star that mortals would come to call Phoenix collap
 "DOTA_Tooltip_ability_winter_wyvern_arctic_burn"	"Arctic Burn"
 "[english]DOTA_Tooltip_ability_winter_wyvern_arctic_burn"	"Arctic Burn"
 "DOTA_Tooltip_ability_winter_wyvern_arctic_burn_Description"	"Du kan flyve og angribe længere. Dine angreb vil gøre skade over tid og hæmme."
-"[english]DOTA_Tooltip_ability_winter_wyvern_arctic_burn_Description"	"Winter Wyvern soars upon an arctic wind, granting her unobstructed movement and allowing her to exhale a blistering chill into each attack. While soaring, her attacks travel further and faster, and slow enemies with a burning freeze that strips them of %percent_damage%%% of their current health each second. Her sight is also hardened against night's chill, passively granting her %night_vision_bonus%% additional vision range at night."
+"[english]DOTA_Tooltip_ability_winter_wyvern_arctic_burn_Description"	"Winter Wyvern soars upon an arctic wind, granting her unobstructed movement and allowing her to exhale a blistering chill into each attack. While soaring, her attacks travel further and faster, and slow enemies with a burning freeze that strips them of %percent_damage%%% of their current health each second. Her sight is also hardened against night's chill, granting her %night_vision_bonus%% additional vision range at night while soaring."
 "DOTA_Tooltip_ability_winter_wyvern_arctic_burn_attack_range_bonus"	"RÆKKEVIDDEBONUS:"
 "[english]DOTA_Tooltip_ability_winter_wyvern_arctic_burn_attack_range_bonus"	"BONUS ATTACK RANGE:"
 "DOTA_Tooltip_ability_winter_wyvern_arctic_burn_projectile_speed_bonus"	"PROJEKTIL-HASTIGHEDSBONUS:"

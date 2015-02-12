@@ -21926,7 +21926,7 @@
       "ID": "5651",
       "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE",
       "AbilityUnitDamageType": "DAMAGE_TYPE_PURE",
-      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_NO",
+      "SpellImmunityType": "SPELL_IMMUNITY_ENEMIES_YES",
       "AbilityCastPoint": "0.0 0.0 0.0 0.0",
       "AbilityCooldown": "50.0 40.0 30.0 20.0",
       "AbilityManaCost": "120 110 100 90",

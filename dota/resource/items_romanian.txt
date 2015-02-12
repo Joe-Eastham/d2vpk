@@ -27859,5 +27859,17 @@ Gift Wrap este disponibil în Magazinul Dota 2 până în 15 ianuarie 2015. Va e
 "[english]DOTA_Item_Relic_Dota2MK_#Episode_1"	"Relic Dota2MK #Episode 1"
 "DOTA_Item_The_Live_Gaming_Dota_2_Tournament"	"The Live Gaming Dota 2 Tournament"
 "[english]DOTA_Item_The_Live_Gaming_Dota_2_Tournament"	"The Live Gaming Dota 2 Tournament"
+"DOTA_Item_Claddish_Cudgel"	"Claddish Cudgel"
+"[english]DOTA_Item_Claddish_Cudgel"	"Claddish Cudgel"
+"DOTA_Item_Coliseum_League_2"	"Coliseum League 2"
+"[english]DOTA_Item_Coliseum_League_2"	"Coliseum League 2"
+"DOTA_Item_CyberMotion_Tournament_1v1"	"CyberMotion Tournament 1v1"
+"[english]DOTA_Item_CyberMotion_Tournament_1v1"	"CyberMotion Tournament 1v1"
+"DOTA_Item_Dota_2_Canada_Cup_Season_4"	"Sezonul 4 Dota 2 Canada Cup"
+"[english]DOTA_Item_Dota_2_Canada_Cup_Season_4"	"Dota 2 Canada Cup Season 4"
+"DOTA_Item_Liga_Chilena_D2G"	"Liga Chilena D2G"
+"[english]DOTA_Item_Liga_Chilena_D2G"	"Liga Chilena D2G"
+"DOTA_Item_Moon_Griffon"	"Moon Griffon"
+"[english]DOTA_Item_Moon_Griffon"	"Moon Griffon"
 }
 }
